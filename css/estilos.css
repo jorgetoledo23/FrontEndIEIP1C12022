@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Arimo', sans-serif;
+}
+
+/* Selector de Etiqueta 
+ul{
+    background-color: black;
+}
+li{
+    color: aliceblue;
+}*/
+
+
+/* Selector de Clase */
+.menu-item{
+    list-style-type: none; 
+    font-size: 20px; 
+    display: inline; 
+    margin: 10px;
+}
+
+.menu-enlace{
+    text-decoration: none;
+    color: rgb(243, 235, 235);
+}
+
+/* Selector de ID */
+
+#list-paises{
+    margin: 50px;
+}
+.item-pais{
+    list-style-type: square;
+}
+
+#menu{
+    background-color: black;
+}
+
+.seleccionado{
+    font-weight: 900;
+    font-size: 22px;
+}
