@@ -1,0 +1,88 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid green;
+    height: 100vh;
+    margin: 10px;
+}
+
+.container div{
+    border: 1px solid orangered;
+    height: 100%;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.Pixel{
+    width: 50px;
+    height: 50px;
+    background: #199b4b;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.Inches{
+    width: 2in;
+    height: 3cm;
+    background: #1bda0a;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.Cm{
+    width: 3cm;
+    height: 2cm;
+    background: #352bbe;
+    border-radius: 10px;
+    margin: 10px;
+    color: white;
+}
+
+.Mm{
+    width: 50mm;
+    height: 25mm;
+    background: #0c4b24;
+    border-radius: 10px;
+    margin: 10px;
+    color: white;
+}
+
+.Porcentaje{
+    width: 50%;
+    height: 15%;
+    background: #0781b9;
+    border-radius: 10px;
+    margin: 10px auto;
+    color: rgb(170, 18, 18);
+}
+
+.Em{
+    width: 4em;
+    height: 3em;
+    background: #cef00e;
+    border-radius: 10px;
+    margin: 10px auto;
+    color: rgb(7, 7, 7);
+}
+
+.Rem{
+    width: 4rem;
+    height: 3rem;
+    background: #034725;
+    border-radius: 10px;
+    margin: 10px auto;
+    color: rgb(233, 230, 230);
+}
+
+html{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
