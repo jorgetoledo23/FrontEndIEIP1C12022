@@ -1,10 +1,75 @@
 body{
     margin: 0px;
     width: 100vw;
-    height: 100vh;
+    height: 200vh;
     background-image: url("../img/fondo.jpg");
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    overflow: hidden;
+}
+
+
+.Fixed{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    margin: 0px;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); 
+    top: 0px;
+    z-index: 5;
+}
+
+.Texto{
+    width: 70%;
+    height: 250px;
+    background-color: white;
+    margin: 100px auto;
+    opacity: 0.8;
+    border-radius: 20px;
+    position: relative;
+    top: 50px;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.MenuLateral{
+    width: 125px;
+    height: 300px;
+    background-color: aquamarine;
+    opacity: 0.8;
+    position: fixed;
+    left: 10px;
+    top: 100px;
+    border-radius: 20px;
+    z-index: 11;
+}
+
+.absolute{
+    position: absolute;
+    width: 50px;
+    height: 50%;
+    background-color: aquamarine;
+    border-radius: 20px;
+    opacity: .8;
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+    margin: 0px auto;
+}
+
+.contenedor1{
+    position: relative;
+    background-color: blue;
+    height: 150px;
+    width: 25%;
+    margin: 10px auto;
+}
+
+.white{
+    color: white;
 }
