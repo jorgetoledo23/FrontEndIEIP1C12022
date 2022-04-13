@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Registro</h3>
+
+        <form class="formulario" 
+        id="formRegistro" name="formRegistro"
+        action="test/guardaRegistro.php" method="post" >
+
+        <div class="form-group">
+            <label class="form-control" for="nombres">Nombres: </label>
+            <input class="form-control" name="nombres" type="text">
+        </div>
+        <div class="form-group">
+            <label class="form-control" for="ape">Apellidos: </label>
+            <input class="form-control" name="ape" type="text">
+        </div>
+        <div class="form-group">
+            <label class="form-control" for="correo">Correo Electronico: </label>
+            <input class="form-control" name="correo" type="email" 
+            placeholder="Correo Electronico">
+        </div>
+        <div class="form-group">
+            <label class="form-control" for="edad">Edad: </label>
+            <input class="form-control" name="edad" type="number">
+        </div>
+        <div class="form-group">
+            <label for="sexo">Masculino</label>
+            <input name="sexo" type="radio" value="Masculino">
+            <label for="sexo">Femenino</label>
+            <input  name="sexo" type="radio" value="Femenino">
+        </div>
+        <div class="form-group">
+            <div>Preferencias Musicales</div>
+            <label class="form-control" for="musica">Rock</label>
+            <input class="form-control" name="musica" type="checkbox" value="Rock">
+            <label class="form-control" for="musica">Cumbia</label>
+            <input class="form-control"  name="musica" type="checkbox" value="Cumbia">
+            <label class="form-control" for="musica">Metal</label>
+            <input class="form-control"  name="musica" type="checkbox" value="Metal">
+        </div>
+
+        <div class="form-group">
+            <label class="form-control" for="color">Color Favorito: </label>
+            <input class="form-control"  name="color" type="color">
+        </div>
+
+        <div class="form-group">
+            <label class="form-control" for="cumple">Cumpleaños: </label>
+            <input class="form-control"  name="cumple" type="date">
+        </div>
+
+        <div class="form-group">
+            <label class="form-control" for="certi">Certificado: </label>
+            <input class="form-control"  name="certi" type="file">
+        </div>
+
+        <div class="form-group">
+            <label class="form-control" for="search">Buscar: </label>
+            <input class="form-control"  name="search" type="search">
+        </div>
+
+        <div class="form-group">
+            <label class="form-control" for="pass">Contraseña: </label>
+            <input class="form-control"  name="pass" type="password">
+        </div>
+
+        <div class="form-group">
+            <label class="form-control" for="comuna">Comuna: </label>
+            <select class="form-control" name="comuna" id="comuna">
+                <option value="Curico">Curico</option>
+                <option value="Molina">Molina</option>
+                <option value="Teno">Teno</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label class="form-control" for="cometario">Comentarios: </label>
+            <textarea class="form-control" name="comentario" id="" cols="30" rows="10"></textarea>
+        </div>
+
+
+
+
+        <div class="form-group">
+            <input class="form-control" name="submit" type="submit" value="Registro">
+        </div>
+
+
+
+
+
+        
+
+            
+
+        </form>
+
+    </div>
+
+    
+</body>
+</html>
