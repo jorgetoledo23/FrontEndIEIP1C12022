@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid orangered;
+    min-height: 300px;
+    text-align: center;
+}
+
+table, th, tr, td{
+    border: 1px dotted black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+table{
+    width: 80%;
+    margin: 50px auto;
+}
+
+th{
+    height: 40px;
+    font-size: 1.2rem;
+    background-color: aquamarine;
+}
+tfoot{
+    font-style: italic;
+    font-weight: 900;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Tablas en Html</h2>
+        <div class="tabla">
+            <table>
+                <thead>
+                    <!-- Defino las Columnas-->
+                    <tr>
+                        <th>Id</th>
+                        <th>Rut</th>
+                        <th>Name</th>
+                        <th>LastName</th>
+                        <th>Saldo</th>
+                        <th>Detalles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Cuerpo (Data)-->
+                    <tr>
+                        <td>1</td>
+                        <td>10.123.123-1</td>
+                        <td>Alfreds</td>
+                        <td>Futterkiste</td>
+                        <td>$ 1.500</td>
+                        <td><button>Ver</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>9.345.232-K</th>
+                        <td>Ernst</td>
+                        <td>Handel</td>
+                        <td>$ 4.000</td>
+                        <td>
+                            <a href="#">Ver</a> | <a href="#">Eliminar</a> | <a href="#">Editar</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"></td>
+                        <td>Total:</td>
+                        <td>$ 5.500</td>
+                    </tr>
+                    <!-- Pie Tabla-->
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

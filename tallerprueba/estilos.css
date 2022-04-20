@@ -1,3 +1,7 @@
+*{
+    font-family: 'Lucida sans', sans-serif;
+}
+
 #headerfooter{
     border: 1px solid red;
     height: 70px;
@@ -32,9 +36,11 @@
 .noticias > div{
     border: 1px solid green;
     border-radius: 20px;
+    padding: 20px;
 }
 
 .imagenes > div{
     border: 1px solid green;
     border-radius: 20px;
+    padding: 20px;
 }
