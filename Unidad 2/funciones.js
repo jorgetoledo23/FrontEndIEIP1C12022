@@ -36,3 +36,4 @@ console.log(Producto(30,50));
 con su primera letra en mayuscula y las demas en minuscula
 Ejemplo: auto => Auto  
 alexis => Alexis*/
+
