@@ -1,5 +1,7 @@
-let string = "Joe"
+let nombre = "Joe"
 console.log(string.length);
+
+
 
 const nombres = "";
 if (nombres.length > 0){
