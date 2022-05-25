@@ -52,5 +52,14 @@ Personas.forEach(p => {
     })
 })
 root.appendChild(ul);
+root.style.display="block" // none
+const elemento = document.getElementById("idElemento") // object
+const elementos = document.getElementsByTagName("img"); // object array
 
 /* Mostrar Resultado en una Pagina Web */
+
+
+
+
+
+
