@@ -1,10 +1,12 @@
 //Interactuar DOM => document object model
-
-//1: Encontrar un elemento(div) con el id "demo" y agregar un titulo(h1) con un texto a eleccion!
 createElement("elemento")
 appendChild("donde")
 getElementById("id")
 innerHtml = "texto de ejemplo"
+
+
+//1: Encontrar un elemento(div) con el id "demo" y agregar un titulo(h1) con un texto a eleccion!
+
 
 //2: Con el titulo ya creado para nuestro div "demo", ahora crear un elemento parrafo(p) e insertarlo.
 

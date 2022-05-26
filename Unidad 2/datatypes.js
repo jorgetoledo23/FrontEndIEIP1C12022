@@ -37,3 +37,28 @@ let persona2 = {
 }
 console.log(persona);
 console.log(persona.City);
+
+
+const titulo = document.getElementById("main-tittle");
+console.log(typeof(titulo))
+titulo.innerHTML
+titulo.parentElement
+titulo.className
+titulo.classList
+
+const newImg = document.createElement("img")
+const newP = document.createElement("p")
+const newDiv = document.createElement("div")
+
+newImg.alt = "imagenTest"
+newP.innerHTML = "<strong>lorem.</strong> ipsun..."
+newDiv.style.border = "1px solid black"
+
+newImg.width = "100px"
+newImg.height = "100px"
+
+newDiv.appendChild(newP)
+newDiv.appendChild(newImg)
+
+const body = document.getElementsByTagName("body")
+body[0].appendChild(newDiv)
