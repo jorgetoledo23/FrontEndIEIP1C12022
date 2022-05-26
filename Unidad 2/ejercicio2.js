@@ -25,4 +25,4 @@ innerHtml = "texto de ejemplo"
 //5: Crear un boton con el texto "Ocultar", que al ser presionado oculte el div demo completamente
 
 
-//5: Crear un boton con el texto "Mostrar", que al ser presionado muestre el div demo completamente
+//6: Crear un boton con el texto "Mostrar", que al ser presionado muestre el div demo completamente

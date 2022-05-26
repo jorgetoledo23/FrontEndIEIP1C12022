@@ -35,7 +35,7 @@ for (const key in items) {
 }
 
 items.forEach(unaFuncion);
-items.forEach(element => console.log(element));
+items.forEach(obj => console.log(obj));
 
 function unaFuncion(value){
     console.log(value)
@@ -80,4 +80,3 @@ const numeros2 = numeros1.map(funcion2);
 function funcion2(value) {
   return value * 2;
 }
-
