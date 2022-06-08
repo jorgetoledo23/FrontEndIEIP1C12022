@@ -1,71 +1,3 @@
-//Funciones de JavaScript son ejecutadas a medida que son llamadas, no cuando son declaradas
-
-function Saludar() {
-  console.log("Hello");
-}
-  
-function Despedirse() {
-  console.log("Goodbye");
-}
-  
-Despedirse();
-Saludar();
-
-//Supongamos que queremos realizar un calculo y despues mostrar el resultado:
-
-//Podemos llamar a la funcion calculadora (myCalculator), guardar el resultado, y luego llamar a la otra funcion (myDisplayer) para mostrar el resultado:
-
-function MostrarResultado(resultado) {
-    document.getElementById("demo").innerHTML = resultado
-    console.log(some)
-}
-
-function calculadora(num1, num2) {
-  let sum = num1 + num2;
-  return sum;
-}
-  
-let result = calculadora(5, 5);
-MostrarResultado(result); 
-
-//O podemos llamar a la funcion (myCalculator), y dejar que esta funcion haga la llamada a la funcion que muestra el resultado (myDisplayer):
-
-function MostrarResultado2(resultado) {
-    document.getElementById("demo").innerHTML = resultado;
-    console.log(resultado)
-}
-  
-function Calculadora(num1, num2) {
-    let sum = num1 + num2;
-    MostrarResultado(sum);
-}
-  
-Calculadora(5, 5);
-
-//El problema con el primer ejemplo es que tienes que llamar a las dos funciones para mostrar el resultado.
-//El problema con el segundo ejemplo es que no podemos prevenir que myCalculator se quien muestra el resultado
-
-//Solucion: Callback ! Usando un Callback podemos llamar a la funcion calculadora con un callback, y dejar que la funcion calculadora
-//ejecute el codigo despues que el calculo sea ejecutado
-
-function MostrarResultadoCallback(resultado) {
-    document.getElementById("demo").innerHTML = resultado;
-    console.log(resultado)
-  }
-  
-function CalculadoraCallBack(num1, num2, myCallback) {
-    let sum = num1 + num2;
-    myCallback(sum);
-}
-  
-CalculadoraCallBack(5, 5, MostrarResultadoCallback);
-
-//En el ejemplo anterior pasamos como parametro una funcion. Eso es llamado un Callback!
-
-//Cuando pasamos una funcion como callback, No se utilizan los parentesis!
-//Correcto: myCalculator(5, 5, myDisplayer);
-//Malo: myCalculator(5, 5, myDisplayer());
-
 const P1 = {
     "Id" : "1",
     "Descripcion" : "Logitech TKL G915",
@@ -125,25 +57,14 @@ const P1 = {
   
   Productos = [P1,P2,P3,P4,P5,P6,P7,P8]
   
-  function getProductos(){
-    return Productos;
-  }
-  
-  function getProducts(){
-    return setTimeout(getProductos, 3000)
-  }
-  
-  //console.log(getProductos())
-  //console.log(getProducts())
-  
-  
   function solicitudServidor(callback){
     setTimeout(function(){
       var datos = Productos;
       callback(datos);
-    },5000);
+    },10000);
   }
   
+
   function pintarProductos(Datos){
     for (let i = 0; i < Datos.length; i++) {
       
