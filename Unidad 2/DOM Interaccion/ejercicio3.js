@@ -63,6 +63,11 @@ const P8 = {
 
 Productos = [P1,P2,P3,P4,P5,P6,P7,P8]
 
+// Create our number formatter.
+var formatter = new Intl.NumberFormat('es-CL', {
+    style: 'currency',
+    currency: 'CLP',
+  });
 
 const root = document.getElementById("root");
 const carro = document.getElementById("carro");
@@ -107,7 +112,7 @@ function loadProducts(){
         const precio = document.createElement("p")
         precio.className = "fst-italic"
         precio.classList.add("text-center")
-        precio.innerHTML = "$" + Item.Precio
+        precio.innerHTML = formatter.format(Item.Precio);
         card.appendChild(precio) 
     
         const btn = document.createElement("button")
@@ -143,9 +148,10 @@ function addToCart(P){
 
     const productoCarro = document.getElementById(P.Id)
     const card = document.getElementById("cardCarro")
-    total += parseInt(P.Precio)
-    document.getElementById("total").innerHTML = "Total Carrito $" + total
-    btnCarro.innerHTML = '<a><i class="fa-solid fa-cart-shopping"></i></a>' + " $" + total   
+    total += parseInt(P.Precio)   
+
+    document.getElementById("total").innerHTML = "Total Carrito " + formatter.format(total);
+    btnCarro.innerHTML = '<a><i class="fa-solid fa-cart-shopping me-2"></i></a>' + formatter.format(total);   
 
     if(productoCarro == null){
         
@@ -185,10 +191,9 @@ function addToCart(P){
 
         //Subtotal Producto en el Carro
         const subtotal = document.createElement("p")
-        subtotal.innerHTML = "$" + P.Precio
+        subtotal.innerHTML = formatter.format(P.Precio);
         subtotal.style.fontSize = "12px"
         subtotal.style.lineHeight = 0.8
-
 
         const btnBorrar = document.createElement("a")
         btnBorrar.innerHTML = '<i class="fa-solid fa-trash"></i>'
@@ -212,10 +217,7 @@ function addToCart(P){
 
         card.appendChild(row)
 
-        
-        
-    }else{
-    
+    }else{    
         //Sumar uno a la Cantidad
 
         const parrafos = productoCarro.getElementsByTagName("p")
@@ -257,6 +259,7 @@ function deleteFromCart(P){
     console.log(total)
     total -= parseInt(subTotal)
     console.log(total)
-    document.getElementById("total").innerHTML = "Total Carrito $" + total
-    btnCarro.innerHTML = '<a><i class="fa-solid fa-cart-shopping"></i></a>' + " $" + total    
+    document.getElementById("total").innerHTML = "Total Carrito " + formatter.format(total);
+    btnCarro.innerHTML = '<a><i class="fa-solid fa-cart-shopping me-2"></i></a>' + formatter.format(total);   
 }
+

@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card{
+    background-color: rgb(252, 175, 80);
+    transition: 0.3s;
+}
+.card:nth-child(even){
+    transform: rotate(4deg);
+}
+.card:nth-child(odd){
+    transform: rotate(-4deg);
+}
+
+.desc {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 2rem;
+    line-height: 0.8;
+}
+
+.titulo{
+    font-weight: bold;
+}
+
+.bg-importante{
+    background-color: rgb(161, 40, 40);
+    color: white;
+}
+.fa-solid:hover{
+    transform: scale(1.2);
+}
+
+.card:hover{
+    /*box-shadow: 1px 1px 1px 10px rgba(49, 42, 42, 0.41);*/
+    transform: scale(1.1);
+}
