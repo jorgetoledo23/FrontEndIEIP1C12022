@@ -161,6 +161,8 @@ function addToCart(P){
         row.classList.add("justify-content-between")
         row.id = P.Id // <div id="1" <div id="2"
 
+        <div id='1' className="row m-2 justify-content-between"></div>
+
         const col3 = document.createElement("div");
         col3.className = "col-4"
         const col9 = document.createElement("div");
@@ -175,6 +177,8 @@ function addToCart(P){
         img.className = "img-thumbnail"
         img.style.padding = "5px"
         img.classList.add("d-inline")
+
+        <img style="" className="d-inline" src="www.rrr.cl/img" />
 
         //Descripcion Producto en el Carro
         const desc = document.createElement("p")
