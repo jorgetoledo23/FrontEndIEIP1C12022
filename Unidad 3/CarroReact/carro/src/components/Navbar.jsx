@@ -5,7 +5,7 @@ export default function Navbar(){
     <div className="container-fluid">
       <a className="navbar-brand" href="#">Carro de Compras React</a>
       <div className="d-flex" role="search">
-          <button className="btn btn-outline-danger"><i class="fa-solid fa-cart-shopping"></i></button>
+          <button className="btn btn-outline-danger"><i className="fa-solid fa-cart-shopping"></i></button>
         </div>
     </div>
   </nav>
