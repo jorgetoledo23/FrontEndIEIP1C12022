@@ -1,7 +1,7 @@
 import React from 'react';
 import ItemCarro from './ItemCarro'
 
-export default function Carro( { Visible, ToggleVisible} ){
+export default function Carro( { Visible, ToggleVisible, ItemsCarro} ){
 
     const CarroStyles = {
         width : Visible ? '100%' : '0px', //If operador Ternario
@@ -23,11 +23,16 @@ export default function Carro( { Visible, ToggleVisible} ){
     }
 
     return <div style={ CarroStyles }>
-        <span onClick={ () => ToggleVisible() } style={ CloseBtnStyles }><i class="fa-solid fa-circle-xmark"></i></span>
+        <span onClick={ () => ToggleVisible() } style={ CloseBtnStyles }><i className="fa-solid fa-circle-xmark"></i></span>
 
-        <ItemCarro />
-        <ItemCarro />
-        <ItemCarro />
+        <div style={{ display : Visible ? 'block' : 'none' }}>
+            { ItemsCarro.map(Item => <ItemCarro key={Item.Producto.Id} Item={Item} />)  }
+            {/* <ItemCarro />
+            <ItemCarro />
+            <ItemCarro /> */}
+        </div>
+
+       
     
     </div>
 }
